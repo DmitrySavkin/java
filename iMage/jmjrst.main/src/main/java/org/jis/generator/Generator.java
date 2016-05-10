@@ -58,8 +58,6 @@ import javax.swing.filechooser.FileSystemView;
 import org.jis.Main;
 import org.jis.options.Options;
 
-import com.sun.image.codec.jpeg.ImageFormatException;
-
 /**
  * @author <a href="http://www.jgeppert.com">Johannes Geppert</a>
  * 
@@ -315,7 +313,7 @@ public class Generator {
    * @throws IOException
    * @throws ImageFormatException
    */
-  public File generateImage(File imageFile, File iout, boolean print, int width, int height, String praefix) throws ImageFormatException, IOException
+  public File generateImage(File imageFile, File iout, boolean print, int width, int height, String praefix) throws IOException
   {
 
     // Output Image
@@ -745,7 +743,7 @@ public class Generator {
     }
     else
     {
-      throw new IllegalArgumentException("degree must be a mutiple of 90°!");
+      throw new IllegalArgumentException("degree must be a mutiple of 90ï¿½!");
     }
 
     // Return a new Image
