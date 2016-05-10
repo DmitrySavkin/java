@@ -54,6 +54,7 @@ public class Tester {
 		BufferedImage img = generator.rotateImage(null, 0.0);
 		assertEquals(img, null);
 	}
+
 	/**
 	 * This method tests if rotateImage throws an IllegalArgumentException
 	 */
@@ -67,5 +68,13 @@ public class Tester {
 			gotExecption = true;
 		}
 		assertTrue(gotExecption);
+	}
+
+	/**
+	 * This method tests if rotateImage throws an NullPointerException
+	 */
+	@Test
+	public void testNullPointerForImageRotate() {
+		assertEquals(generator.rotateImage(null, 1.0), null);
 	}
 }
