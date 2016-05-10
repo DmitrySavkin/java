@@ -659,31 +659,34 @@ public class Generator {
 
 		AffineTransform transform = new AffineTransform();
 
-		// get width and height of the origianl image
-		int width = image.getWidth(null);
-		int height = image.getHeight(null);
-
-		if (image == null)
+		if (image == null) {
 			return null;
-		else if (rotate == Generator.ROTATE_90) {
-			transform.translate(height, 0);
-			transform.rotate(Generator.ROTATE_90);
-			width = image.getHeight(); // swap
-			height = image.getWidth();
-		} else if (rotate == Generator.ROTATE_270) {
-			transform.translate(0, width);
-			transform.rotate(Generator.ROTATE_270);
-			width = image.getHeight(null); // swap
-			height = image.getWidth(null);
 		} else {
-			throw new IllegalArgumentException("degree must be a mutiple of 90�!");
+			// get width and height of the origianl image
+			int width = image.getWidth(null);
+			int height = image.getHeight(null);
+			if (rotate == Generator.ROTATE_90) {
+				transform.translate(height, 0);
+				transform.rotate(Generator.ROTATE_90);
+				width = image.getHeight(); // swap
+				height = image.getWidth();
+			} else if (rotate == Generator.ROTATE_270) {
+				transform.translate(0, width);
+				transform.rotate(Generator.ROTATE_270);
+				width = image.getHeight(null); // swap
+				height = image.getWidth(null);
+			} else {
+				throw new IllegalArgumentException("degree must be a mutiple of 90�!");
+			}
+
+			// Return a new Image
+			BufferedImage returnImage = new BufferedImage(width, height,
+					image.getColorModel().getColorSpace().getType());
+			Graphics2D g = returnImage.createGraphics();
+			g.drawImage(image, transform, null);
+
+			return returnImage;
 		}
 
-		// Return a new Image
-		BufferedImage returnImage = new BufferedImage(width, height, image.getColorModel().getColorSpace().getType());
-		Graphics2D g = returnImage.createGraphics();
-		g.drawImage(image, transform, null);
-
-		return returnImage;
 	}
 }
