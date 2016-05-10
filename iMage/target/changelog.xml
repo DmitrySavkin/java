@@ -1,4 +1,5 @@
 <changelog><commit>
+<<<<<<< HEAD
 					<time>1462905259</time>
 					<sha1>845e12f46e8cc9bbf299fa631fb49a1c857208cc</sha1>
 					<author>ucews</author>
@@ -51,6 +52,12 @@
 					<sha1>8cb6da5811fc15f4c4692495ae928352eab53cd5</sha1>
 					<author>ucews</author>
 					<branches>refs/heads/master,refs/heads/RotateImageTest</branches>
+=======
+					<time>1462888851</time>
+					<sha1>8cb6da5811fc15f4c4692495ae928352eab53cd5</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+>>>>>>> RotateImageTest
 					<msg>Main.java modified: line 62 &quot;final&quot; added, line 109 &quot;{&quot; moved one line
 to the top, line 193 moved &quot;{&quot; moved one line to the top an withespace
 added</msg>
@@ -58,7 +65,11 @@ added</msg>
 					<time>1462887853</time>
 					<sha1>1e3ca1fd068cb89f402924192d7c80c066c84820</sha1>
 					<author>ucews</author>
+<<<<<<< HEAD
 					<branches>refs/heads/master,refs/heads/RotateImageTest</branches>
+=======
+					<branches>refs/heads/master</branches>
+>>>>>>> RotateImageTest
 					<msg>set addClasspath to true. Jar is executable</msg>
 				</commit><commit>
 					<time>1462885721</time>

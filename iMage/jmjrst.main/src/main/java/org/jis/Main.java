@@ -105,7 +105,7 @@ public final class Main extends JFrame {
       UIManager.setLookAndFeel(o.getLookAndFeel());
       SwingUtilities.updateComponentTreeUI(this);
     }
-    catch (Exception l){
+    catch (Exception l) {
     }
 
     Rectangle bounds = gc.getBounds();
