@@ -6,6 +6,8 @@ import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 import javax.imageio.ImageIO;
 
@@ -43,6 +45,7 @@ public class Tester {
 	public void testRotateBufferedImage() {
 		BufferedImage img = new BufferedImage(10, 10, 10);
 		BufferedImage tmp = generator.rotateImage(img, 0.0);
+		tearDown(tmp);
 		assertEquals(tmp, img);
 	}
 
@@ -82,12 +85,12 @@ public class Tester {
 	 */
 	@Test
 	public void testRotate90() {
-		BufferedImage rotateImage = generator.rotateImage(buffImage, Generator.ROTATE_90);
-		int height = rotateImage.getHeight();
-		int width = rotateImage.getWidth();
+		BufferedImage rotatedImage = generator.rotateImage(buffImage, Generator.ROTATE_90);
+		int height = rotatedImage.getHeight();
+		int width = rotatedImage.getWidth();
 		assertEquals(height, buffImage.getWidth());
 		assertEquals(width, buffImage.getHeight());
-		assertEquals(generator.rotateImage(buffImage, Generator.ROTATE_90), rotateImage);
+		tearDown(rotatedImage);
 	}
 
 	/**
@@ -95,11 +98,34 @@ public class Tester {
 	 */
 	@Test
 	public void testRotate270() {
-		BufferedImage rotateImage = generator.rotateImage(buffImage, Generator.ROTATE_270);
-		int height = rotateImage.getHeight();
-		int width = rotateImage.getWidth();
+		BufferedImage rotatedImage = generator.rotateImage(buffImage, Generator.ROTATE_270);
+		int height = rotatedImage.getHeight();
+		int width = rotatedImage.getWidth();
 		assertEquals(height, buffImage.getWidth());
 		assertEquals(width, buffImage.getHeight());
-		assertEquals(generator.rotateImage(buffImage, Generator.ROTATE_270), rotateImage);
+		tearDown(rotatedImage);
+	}
+
+	/**
+	 * This method saves all the pictures created during the tests and creates
+	 * the directory target/testData if it doesn't already exists
+	 */
+	public void tearDown(BufferedImage image) {
+		File directory = new File("target/testData");
+		if (directory.exists() == false) {
+			try {
+				directory.mkdir();
+			} catch (SecurityException exception) {
+			}
+		}
+		try {
+			SimpleDateFormat dateFormat = new SimpleDateFormat("HHmmss_SSS");
+			Calendar calendar = Calendar.getInstance();
+			String time = dateFormat.format(calendar.getTime());
+			String fileName = directory + "/rotatedPicture_" + time + ".jpg";
+			File out = new File(fileName);
+			ImageIO.write(image, "jpg", out);
+		} catch (IOException e) {
+		}
 	}
 }
