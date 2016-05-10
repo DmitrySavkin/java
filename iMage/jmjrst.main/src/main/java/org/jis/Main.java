@@ -59,7 +59,7 @@ import org.jis.view.dialog.OptionsEdit;
  * The Main Class is the Entry Point of the Application and build the GUI
  * </p>
  */
-public class Main extends JFrame {
+public final class Main extends JFrame {
   private static final long serialVersionUID = 5124271743719044219L;
 
   private Options           o;
@@ -105,8 +105,7 @@ public class Main extends JFrame {
       UIManager.setLookAndFeel(o.getLookAndFeel());
       SwingUtilities.updateComponentTreeUI(this);
     }
-    catch (Exception l)
-    {
+    catch (Exception l){
     }
 
     Rectangle bounds = gc.getBounds();
@@ -190,8 +189,7 @@ public class Main extends JFrame {
     setVisible(true);
 
     // after the first start of the Application open the Options Dialog
-    if (o.isInitial())
-    {
+    if (o.isInitial()) {
       openOptions();
       o.setInitial(false);
     }
