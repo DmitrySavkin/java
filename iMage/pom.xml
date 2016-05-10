@@ -16,4 +16,7 @@
 <url>http://bob.ipd.kit.edu/nexus/content/repositories/swt1</url>
 </repository>
 </repositories>
+  <modules>
+  	<module>jmjrst.main</module>
+  </modules>
 </project>
