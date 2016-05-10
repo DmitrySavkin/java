@@ -1,4 +1,28 @@
 <changelog><commit>
+					<time>1462885721</time>
+					<sha1>6961c1781a7a8866d2e09cd3d4a7e903ca12ac05</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>copied src.xml, checkstyle_swt1.xml, checkstyle.launch and integration-test.launch to jmjrst.main project</msg>
+				</commit><commit>
+					<time>1462885164</time>
+					<sha1>69d1df8e459d53a197b41cfa15e225d8f09e0bf7</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>moved the messages_de.properties and the messages_en.properties file to jmjrst.main\src\main\resources\org\jis</msg>
+				</commit><commit>
+					<time>1462884903</time>
+					<sha1>2d98bb1ee2c28766e573db141bc16f7578f99755</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>moved LICENSE, options.properties and the folders src and templates to their corresponding directory</msg>
+				</commit><commit>
+					<time>1462884044</time>
+					<sha1>91dfe24ad24ade42c43ffd0659dfdd152e92e7db</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>Repositories added to pom.xml and jmjrst.main created</msg>
+				</commit><commit>
 					<time>1462882068</time>
 					<sha1>be0700ec6808367c10660060db15b6739cb7d11d</sha1>
 					<author>ucews</author>
