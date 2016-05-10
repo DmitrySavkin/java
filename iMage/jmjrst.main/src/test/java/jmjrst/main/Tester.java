@@ -47,7 +47,7 @@ public class Tester {
 	}
 
 	/**
-	 * This method tests if rotateImage functions properly with null
+	 * This method tests if rotateImage functions properly with null as image
 	 */
 	@Test
 	public void testRotateNullImage() {
@@ -62,7 +62,6 @@ public class Tester {
 	public void testIllegalArgumentForImageRotate() {
 		boolean gotExecption = false;
 		try {
-			setUp();
 			generator.rotateImage(buffImage, 1.0);
 		} catch (IllegalArgumentException exception) {
 			gotExecption = true;
@@ -76,5 +75,31 @@ public class Tester {
 	@Test
 	public void testNullPointerForImageRotate() {
 		assertEquals(generator.rotateImage(null, 1.0), null);
+	}
+
+	/**
+	 * This method tests if rotateImage functions properly for 90 degrees
+	 */
+	@Test
+	public void testRotate90() {
+		BufferedImage rotateImage = generator.rotateImage(buffImage, Generator.ROTATE_90);
+		int height = rotateImage.getHeight();
+		int width = rotateImage.getWidth();
+		assertEquals(height, buffImage.getWidth());
+		assertEquals(width, buffImage.getHeight());
+		assertEquals(generator.rotateImage(buffImage, Generator.ROTATE_90), rotateImage);
+	}
+
+	/**
+	 * This method tests if rotateImage functions properly for 270 degrees
+	 */
+	@Test
+	public void testRotate270() {
+		BufferedImage rotateImage = generator.rotateImage(buffImage, Generator.ROTATE_270);
+		int height = rotateImage.getHeight();
+		int width = rotateImage.getWidth();
+		assertEquals(height, buffImage.getWidth());
+		assertEquals(width, buffImage.getHeight());
+		assertEquals(generator.rotateImage(buffImage, Generator.ROTATE_270), rotateImage);
 	}
 }
