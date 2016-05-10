@@ -21,7 +21,8 @@
 			</plugin>
 		</plugins>
 	</build>
-  <groupId>swt1.ub1.a1</groupId>
+  <groupId>swt1.ub1.a2</groupId>
   <artifactId>1971886</artifactId>
   <name>jmjrst.main</name>
+  <packaging>pom</packaging>
 </project>
