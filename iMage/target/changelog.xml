@@ -1,4 +1,18 @@
 <changelog><commit>
+					<time>1462888851</time>
+					<sha1>8cb6da5811fc15f4c4692495ae928352eab53cd5</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>Main.java modified: line 62 &quot;final&quot; added, line 109 &quot;{&quot; moved one line
+to the top, line 193 moved &quot;{&quot; moved one line to the top an withespace
+added</msg>
+				</commit><commit>
+					<time>1462887853</time>
+					<sha1>1e3ca1fd068cb89f402924192d7c80c066c84820</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>set addClasspath to true. Jar is executable</msg>
+				</commit><commit>
 					<time>1462885721</time>
 					<sha1>6961c1781a7a8866d2e09cd3d4a7e903ca12ac05</sha1>
 					<author>ucews</author>
