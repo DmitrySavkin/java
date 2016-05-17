@@ -1,5 +1,26 @@
 <changelog><commit>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+					<time>1462943559</time>
+					<sha1>6a0c88f382265d2a3cadaffbe560e5e8c2b43bf8</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/RotateImageTest</branches>
+					<msg>renamed Tester.java to GeneratorTest.java</msg>
+				</commit><commit>
+					<time>1462906642</time>
+					<sha1>cbbafb1ad5dedd06498eca75a23e974593019d06</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>Merged branches</msg>
+				</commit><commit>
+					<time>1462906467</time>
+					<sha1>0cc39b86792aef958c0668f304752646be4a2538</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>change groupID</msg>
+				</commit><commit>
+>>>>>>> RotateImageTest
 					<time>1462905259</time>
 					<sha1>845e12f46e8cc9bbf299fa631fb49a1c857208cc</sha1>
 					<author>ucews</author>
@@ -9,42 +30,67 @@
 					<time>1462905110</time>
 					<sha1>b4879baaac02d596827085f6d71d9195ffe203fc</sha1>
 					<author>ucews</author>
+<<<<<<< HEAD
 					<branches>refs/heads/RotateImageTest</branches>
+=======
+					<branches>refs/heads/master,refs/heads/RotateImageTest</branches>
+>>>>>>> RotateImageTest
 					<msg>patch created for Generator class</msg>
 				</commit><commit>
 					<time>1462903633</time>
 					<sha1>f4ba8ff1d3afc315fc1b4f5fce7599fe3fbb1908</sha1>
 					<author>ucews</author>
+<<<<<<< HEAD
 					<branches>refs/heads/RotateImageTest</branches>
+=======
+					<branches>refs/heads/master,refs/heads/RotateImageTest</branches>
+>>>>>>> RotateImageTest
 					<msg>created tearDown(...) method´and implemented it into the test-methods. Rotated pictures are now getting saved.</msg>
 				</commit><commit>
 					<time>1462899111</time>
 					<sha1>e279dbdeef9e3e07d0700bf3e919f6e2441c2bbb</sha1>
 					<author>ucews</author>
+<<<<<<< HEAD
 					<branches>refs/heads/RotateImageTest</branches>
+=======
+					<branches>refs/heads/master,refs/heads/RotateImageTest</branches>
+>>>>>>> RotateImageTest
 					<msg>added testRotate90() medthod and testRotate270() method</msg>
 				</commit><commit>
 					<time>1462897568</time>
 					<sha1>015a58b14e50730aefab3cc61f41e719cbb93585</sha1>
 					<author>ucews</author>
+<<<<<<< HEAD
 					<branches>refs/heads/RotateImageTest</branches>
+=======
+					<branches>refs/heads/master,refs/heads/RotateImageTest</branches>
+>>>>>>> RotateImageTest
 					<msg>corrected rotateImage to prevent NullpointerException</msg>
 				</commit><commit>
 					<time>1462896995</time>
 					<sha1>5aae551f09baa7066da15e8cdd932cd643aae908</sha1>
 					<author>ucews</author>
+<<<<<<< HEAD
 					<branches>refs/heads/RotateImageTest</branches>
+=======
+					<branches>refs/heads/master,refs/heads/RotateImageTest</branches>
+>>>>>>> RotateImageTest
 					<msg>added testNullPointerForImageRotate() in Tester.java and prevented NullPointerException for the rotateImage(...) method</msg>
 				</commit><commit>
 					<time>1462895974</time>
 					<sha1>ffbaa2e298d00b671e4f600055362e93aa79f3ac</sha1>
 					<author>ucews</author>
+<<<<<<< HEAD
 					<branches>refs/heads/RotateImageTest</branches>
+=======
+					<branches>refs/heads/master,refs/heads/RotateImageTest</branches>
+>>>>>>> RotateImageTest
 					<msg>added testIllegalArgumentForImageRotate()</msg>
 				</commit><commit>
 					<time>1462894400</time>
 					<sha1>4245c17d89dcbbbf4e81ff83b74f9fb9fcc33a7f</sha1>
 					<author>ucews</author>
+<<<<<<< HEAD
 					<branches>refs/heads/RotateImageTest</branches>
 					<msg>added src/test/resources/picture.jpg, Tester class created, added setUp() methode, added testRotateBufferedImage() method and added testRotateNullImage()</msg>
 				</commit><commit>
@@ -58,6 +104,15 @@
 					<author>ucews</author>
 					<branches>refs/heads/master</branches>
 >>>>>>> RotateImageTest
+=======
+					<branches>refs/heads/master,refs/heads/RotateImageTest</branches>
+					<msg>added src/test/resources/picture.jpg, Tester class created, added setUp() methode, added testRotateBufferedImage() method and added testRotateNullImage()</msg>
+				</commit><commit>
+					<time>1462888851</time>
+					<sha1>8cb6da5811fc15f4c4692495ae928352eab53cd5</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master,refs/heads/RotateImageTest</branches>
+>>>>>>> RotateImageTest
 					<msg>Main.java modified: line 62 &quot;final&quot; added, line 109 &quot;{&quot; moved one line
 to the top, line 193 moved &quot;{&quot; moved one line to the top an withespace
 added</msg>
@@ -66,9 +121,13 @@ added</msg>
 					<sha1>1e3ca1fd068cb89f402924192d7c80c066c84820</sha1>
 					<author>ucews</author>
 <<<<<<< HEAD
+<<<<<<< HEAD
 					<branches>refs/heads/master,refs/heads/RotateImageTest</branches>
 =======
 					<branches>refs/heads/master</branches>
+>>>>>>> RotateImageTest
+=======
+					<branches>refs/heads/master,refs/heads/RotateImageTest</branches>
 >>>>>>> RotateImageTest
 					<msg>set addClasspath to true. Jar is executable</msg>
 				</commit><commit>
