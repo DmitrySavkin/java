@@ -1,0 +1,150 @@
+\ifglsentryexists{Dozent}{}%
+{%
+\gls@defglossaryentry{Dozent}%
+{%
+name={Dozent},%
+sort={Dozent},%
+type={main},%
+first={Dozent},%
+firstplural={Dozenten},%
+text={Dozent},%
+plural={Dozenten},%
+description={Leiter eines oder mehrerer Seminartypen},%
+descriptionplural={Leiter eines oder mehrerer Seminartypen},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Kunde}{}%
+{%
+\gls@defglossaryentry{Kunde}%
+{%
+name={Kunde},%
+sort={Kunde},%
+type={main},%
+first={Kunde},%
+firstplural={Kunden},%
+text={Kunde},%
+plural={Kunden},%
+description={(Zahlende) Teilnehmer einer oder mehrerer Seminarveranstaltung/en},%
+descriptionplural={(Zahlende) Teilnehmer einer oder mehrerer Seminarveranstaltung/en},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Seminartyp}{}%
+{%
+\gls@defglossaryentry{Seminartyp}%
+{%
+name={Seminartyp},%
+sort={Seminartyp},%
+type={main},%
+first={Seminartyp},%
+firstplural={Seminartypen},%
+text={Seminartyp},%
+plural={Seminartypen},%
+description={Typ einer Lehrveranstaltung (z.B. \enquote {Schöner Malen -- Anfängerkurs})},%
+descriptionplural={Typ einer Lehrveranstaltung (z.B. \enquote {Schöner Malen -- Anfängerkurs})},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Seminarveranstaltung}{}%
+{%
+\gls@defglossaryentry{Seminarveranstaltung}%
+{%
+name={Seminarveranstaltung},%
+sort={Seminarveranstaltung},%
+type={main},%
+first={Seminarveranstaltung},%
+firstplural={Seminarveranstaltungen},%
+text={Seminarveranstaltung},%
+plural={Seminarveranstaltungen},%
+description={Tatsächlich stattfindende Lehrveranstaltung (z.B. \enquote {Schöner Malen -- Anfängerkurs, Sommer 2014})},%
+descriptionplural={Tatsächlich stattfindende Lehrveranstaltung (z.B. \enquote {Schöner Malen -- Anfängerkurs, Sommer 2014})},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Computer}{}%
+{%
+\gls@defglossaryentry{Computer}%
+{%
+name={Computer},%
+sort={Computer},%
+type={main},%
+first={Computer},%
+firstplural={Computers},%
+text={Computer},%
+plural={Computers},%
+description={Gerät zur Verarbeitung zur Daten, das die Daten einlesen, verarbeiten, speichern und ausgeben kann},%
+descriptionplural={Gerät zur Verarbeitung zur Daten, das die Daten einlesen, verarbeiten, speichern und ausgeben kann},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
