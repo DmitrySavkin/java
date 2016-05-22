@@ -14,7 +14,7 @@ bookmarks=true,%
 
 \makeglossaries
 
-\title{SoftTech: \gls{iMage}}
+\title{SoftTech: \gls{iMage}-Onlineshop}
 \author{Sam Weiler, 1971886}
 
 \begin{document}
@@ -26,7 +26,7 @@ bookmarks=true,%
 Die Firma SoftTech will das neue Produkt \gls{iMage} gewinnbringend vermarkten. \gls{Plug-In}s sollen online frei auswählbar und zum Nachkauf zur Verfügung stehen.
 
 \section{Produkteinsatz}
-Bei dem Produkt handelt es sich um einen \gls{Onlineshop} welcher zur Informierung und Vermarktung des \gls{iMage}-Basic-Paket und dessen erhältliche \gls{Plug-In}s dient. Mithilfe dieses \gls{Onlineshop} kann man als \gls{iMage}-Benutzer sein Basic-Paket \gls{upgraden}.
+Bei dem Produkt handelt es sich um einen \gls{Onlineshop} welcher zur Informierung und Vermarktung des \gls{iMage}-Basic-Paket und dessen erhältliche \gls{Plug-In}s dient. Mithilfe dieses \gls{Onlineshop}s kann man als \gls{iMage}-Benutzer sein Basic-Paket \gls{upgraden}.
 
 Zielgruppe: \gls{Kunde}n aus der ganzen Welt mit einem Internetzugang.
 
@@ -34,12 +34,13 @@ Plattform: \gls{Google Chrome}, \gls{Mozilla Firefox}, \gls{Opera}, \gls{Interne
 
 \section{Funktionale Anforderungen}
 \begin{itemize}[nosep]
-\item[FA10] Integrieren neuer \gls{Plug-In}s und \gls{Plug-In}-Pakete in den \gls{Onlineshop}.
-\item[FA20] Erstellung, Änderung von Preis und zeitlich begrenzten \gls{Sonderangebot}en.
-\item[FA30] Eintragung, Änderung einer Produktbeschreibung und eines \gls{Plug-In}-Paketinhalt.
-\item[FA40] Die Preisersparnis der erhältlichen \gls{Plug-In}-Pakete gegenüber dem Einzelerwerb anzeigen.
-\item[FA50] Ersterfassung, Eintragung und Bearbeitung von \gls{Kunde}n.
-\item[FA60] Versenden von \gls{Bestaetigungsnachricht}en.
+\item[FA10] Integrieren neuer \gls{Plug-In}s und \gls{Plug-In}-Pakete in den \gls{Onlineshop}
+\item[FA20] Erstellung, Änderung von Preisen und zeitlich begrenzten \gls{Sonderangebot}en
+\item[FA30] Eintragung, Änderung einer Produktbeschreibung und eines \gls{Plug-In}-Paketinhaltes
+\item[FA40] Die Preisersparnis der erhältlichen \gls{Plug-In}-Pakete gegenüber dem Einzelerwerb anzeigen
+\item[FA50] Ersterfassung, Eintragung und Bearbeitung von \gls{Kunde}n
+\item[FA60] Versenden von \gls{Bestaetigungsnachricht}en
+\item[FA70] Bearbeitung von Zahlungen
 \end{itemize}
 
 \section{Produktdaten}
@@ -55,6 +56,7 @@ Plattform: \gls{Google Chrome}, \gls{Mozilla Firefox}, \gls{Opera}, \gls{Interne
 \item[NF10] Bei der Funktion /FA50/ müssen Adresse, Telefonnummer und E-Post-Adresse angegeben und auf Korrektheit überprüft werden.
 \item[NF20] \gls{Bestaetigungsnachricht}en müssen spätestens innerhalb von 3 Minuten vom Empfängen angenommen werden können.
 \item[NF30] Der \gls{Onlineshop} muss mindestens von den folgenden \gls{Browser}s unterstützt werden: Google Chrome, Mozilla Firefox, Opera
+\item[NF40] Die Funktion /FA70/ muss besonders gut gesichert sein
 \end{itemize}
 
 \section{Systemmodelle}
@@ -86,7 +88,7 @@ Anwendungsfälle: Registrierung, persönliche Datenangabe, E-Post-Adressenbestä
 
 Textuelle Beschreibung:
 
-Ein noch nicht registrierter \gls{Kunde} kann sich registrieren indem er als erst seine persönlichen Daten angibt(Adresse, Telefonnummer, ect.). Als nächster Schritt muss er für eine vollständige Registrierung, seine E-Post-Adresse bestätigen. Wenn der neue \gls{Kunde} will, dann kann er seine bevorzugte Zahlungsmethode wählen. Nach dem Wählen der Zahlungsmethode, muss man im Fall der Kreditkartenabbuchung noch seine Kreditkarteninformationen angeben.
+Ein noch nicht registrierter \gls{Kunde} kann sich registrieren indem er als erstes seine persönlichen Daten angibt(Adresse, Telefonnummer, ect.). Als nächster Schritt muss er für eine vollständige Registrierung, seine E-Post-Adresse bestätigen. Wenn der neue \gls{Kunde} will, dann kann er seine bevorzugte Zahlungsmethode wählen. Nach dem Wählen der Zahlungsmethode, muss man im Fall der Kreditkartenabbuchung noch seine Kreditkarteninformationen angeben.
 Ein bereits registrierter \gls{Kunde} kann immer seine bevorzugte Zahlungsart ändern oder wählen, seine persönliche Daten ändern oder anpassen und die von ihm schon erworbene Produkte ansehen. 
 
 
@@ -109,82 +111,82 @@ Ein bereits registrierter \gls{Kunde} kann immer seine bevorzugte Zahlungsart ä
 {
 	name=Kunde,
 	plural=Kunden,
-	description={(Zahlende) Benutzer des Onlineshops.}
+	description={(Zahlender) Benutzer des Onlineshops}
 }
 
 \newglossaryentry{Plug-In}
 {
 	name=Plug-In,
 	plural=Plug-Ins,
-	description={Erweiterte Komponenten des iMage-Basic-Paket.}
+	description={Erweiterte Komponenten des iMage-Basic-Paket}
 }
 
 \newglossaryentry{Sonderangebot}
 {
 	name=Sonderangebot,
 	plural=Sonderangebote,
-	description={Meist ein Produkt oder eine Zusammenstellung von mehreren Produkten, erhältlich für einen niedrigeren Preis als das normale Angebot.}
+	description={Meist ein Produkt oder eine Zusammenstellung von mehreren Produkten, erhältlich für einen niedrigeren Preis als das normale Angebot}
 }
 
 \newglossaryentry{upgraden}
 {
 	name=upgraden,
-	description={beschreibt das Hinzufügen von weiteren Komponenten und das Verbessern eines bereits vorhandenen Grundbaustein.}
+	description={beschreibt das Hinzufügen von weiteren Komponenten und das Verbessern eines bereits vorhandenen Grundbaustein}
 }
 
 \newglossaryentry{Onlineshop}
 {
 	name=Onlineshop,
 	plural=Onlineshops,
-	description={Eine Plattform die es einem ermöglich mithilfe eines Internetzuganges Waren einzukaufen und anzusehen.}
+	description={Eine Plattform die es einem ermöglich mithilfe eines Internetzuganges Waren einzukaufen und anzusehen}
 }
 
 \newglossaryentry{iMage}{
 	name=iMage,
-	description={Dabei handelt es sich um ein Bildbearbeitungsprogramm.}
+	description={Dabei handelt es sich um ein Bildbearbeitungsprogramm}
 }
 
 \newglossaryentry{Bestaetigungsnachricht}
 {
 	name=Bestaetigungsnachricht,
 	plural=Bestaetigungsnachrichten,
-	description={eine Nachricht die meistens online verschickt wird, welche eine Link beinhaltet. Durch das ausführen des Links, kann man die Echtheit der Adresse bestätigen.}
+	description={eine Nachricht die meistens online verschickt wird, welche eine Link beinhaltet. Durch das ausführen des Links, kann man die Echtheit der Adresse bestätigen}
 }
 
 \newglossaryentry{Browser}
 {
 	name=Browser,
 	plural=Browsers,
-	description={Eine Oberfläche die es einem \gls{Computer}nutzer ermöglicht Webseiten zu besuchen.}
+	description={Eine Oberfläche die es einem \gls{Computer}nutzer ermöglicht Webseiten zu besuchen}
 }
 
 \newglossaryentry{Opera}
 {
 	name=Opera,
-	description={Opera ist ein kostenloser, auf einer quelloffenen Rendering-Engine basierender Webbrowser}
+	description={Ein kostenloser Webbrowser}
 }
 
 \newglossaryentry{Mozilla Firefox}
 {
 	name=Mozilla Firefox,
-	description={Firefox ist ein freier Webbrowser des Mozilla-Projektes}
+	description={Ein freier Webbrowser des Mozilla-Projektes}
 }
 
 \newglossaryentry{Internet Explorer}
 {
 	name=Internet Explorer,
-	description={Internet Explorer ist ein Webbrowser des Softwareherstellers Microsoft für dessen Betriebssystem Windows}
+	description={Ein Webbrowser von Microsoft}
 }
 
 \newglossaryentry{Google Chrome}
 {
 	name=Google Chrome,
-	description={Google Chrome ist ein Webbrowser des US-amerikanischen Unternehmens Google}
+	description={Ein kostenloser Webbrowser des Unternehmens Google}
 }
 
 \newglossaryentry{Safari}
 {
 	name=Safrai,
-	description={Safari ist ein Webbrowser des Unternehmens Apple. Er gehört zum Lieferumfang von Mac OS X ab der Version Mac OS X Panther sowie von iOS und ersetzte den vorher mitgelieferten Microsoft Internet Explorer für Mac als Standard-Browser.}
+	description={Ein Webbrowser des Unternehmens Apple}
 }
 \end{document}
