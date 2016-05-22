@@ -1,16 +1,16 @@
-\ifglsentryexists{Dozent}{}%
+\ifglsentryexists{Computer}{}%
 {%
-\gls@defglossaryentry{Dozent}%
+\gls@defglossaryentry{Computer}%
 {%
-name={Dozent},%
-sort={Dozent},%
+name={Computer},%
+sort={Computer},%
 type={main},%
-first={Dozent},%
-firstplural={Dozenten},%
-text={Dozent},%
-plural={Dozenten},%
-description={Leiter eines oder mehrerer Seminartypen},%
-descriptionplural={Leiter eines oder mehrerer Seminartypen},%
+first={Computer},%
+firstplural={Computers},%
+text={Computer},%
+plural={Computers},%
+description={Gerät zur Verarbeitung zur Daten, das die Daten einlesen, verarbeiten, speichern und ausgeben kann},%
+descriptionplural={Gerät zur Verarbeitung zur Daten, das die Daten einlesen, verarbeiten, speichern und ausgeben kann},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -39,8 +39,8 @@ first={Kunde},%
 firstplural={Kunden},%
 text={Kunde},%
 plural={Kunden},%
-description={(Zahlende) Teilnehmer einer oder mehrerer Seminarveranstaltung/en},%
-descriptionplural={(Zahlende) Teilnehmer einer oder mehrerer Seminarveranstaltung/en},%
+description={(Zahlende) Benutzer des Onlineshops.},%
+descriptionplural={(Zahlende) Benutzer des Onlineshops.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -58,19 +58,19 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{Seminartyp}{}%
+\ifglsentryexists{Plug-In}{}%
 {%
-\gls@defglossaryentry{Seminartyp}%
+\gls@defglossaryentry{Plug-In}%
 {%
-name={Seminartyp},%
-sort={Seminartyp},%
+name={Plug-In},%
+sort={Plug-In},%
 type={main},%
-first={Seminartyp},%
-firstplural={Seminartypen},%
-text={Seminartyp},%
-plural={Seminartypen},%
-description={Typ einer Lehrveranstaltung (z.B. \enquote {Schöner Malen -- Anfängerkurs})},%
-descriptionplural={Typ einer Lehrveranstaltung (z.B. \enquote {Schöner Malen -- Anfängerkurs})},%
+first={Plug-In},%
+firstplural={Plug-Ins},%
+text={Plug-In},%
+plural={Plug-Ins},%
+description={Erweiterte Komponenten des iMage-Basic-Paket.},%
+descriptionplural={Erweiterte Komponenten des iMage-Basic-Paket.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -88,19 +88,19 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{Seminarveranstaltung}{}%
+\ifglsentryexists{Sonderangebot}{}%
 {%
-\gls@defglossaryentry{Seminarveranstaltung}%
+\gls@defglossaryentry{Sonderangebot}%
 {%
-name={Seminarveranstaltung},%
-sort={Seminarveranstaltung},%
+name={Sonderangebot},%
+sort={Sonderangebot},%
 type={main},%
-first={Seminarveranstaltung},%
-firstplural={Seminarveranstaltungen},%
-text={Seminarveranstaltung},%
-plural={Seminarveranstaltungen},%
-description={Tatsächlich stattfindende Lehrveranstaltung (z.B. \enquote {Schöner Malen -- Anfängerkurs, Sommer 2014})},%
-descriptionplural={Tatsächlich stattfindende Lehrveranstaltung (z.B. \enquote {Schöner Malen -- Anfängerkurs, Sommer 2014})},%
+first={Sonderangebot},%
+firstplural={Sonderangebote},%
+text={Sonderangebot},%
+plural={Sonderangebote},%
+description={Meist ein Produkt oder eine Zusammenstellung von mehreren Produkten, erhältlich für einen niedrigeren Preis als das normale Angebot.},%
+descriptionplural={Meist ein Produkt oder eine Zusammenstellung von mehreren Produkten, erhältlich für einen niedrigeren Preis als das normale Angebot.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -118,19 +118,289 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{Computer}{}%
+\ifglsentryexists{upgraden}{}%
 {%
-\gls@defglossaryentry{Computer}%
+\gls@defglossaryentry{upgraden}%
 {%
-name={Computer},%
-sort={Computer},%
+name={upgraden},%
+sort={upgraden},%
 type={main},%
-first={Computer},%
-firstplural={Computers},%
-text={Computer},%
-plural={Computers},%
-description={Gerät zur Verarbeitung zur Daten, das die Daten einlesen, verarbeiten, speichern und ausgeben kann},%
-descriptionplural={Gerät zur Verarbeitung zur Daten, das die Daten einlesen, verarbeiten, speichern und ausgeben kann},%
+first={upgraden},%
+firstplural={upgradens},%
+text={upgraden},%
+plural={upgradens},%
+description={beschreibt das Hinzufügen von weiteren Komponenten und das Verbessern eines bereits vorhandenen Grundbaustein.},%
+descriptionplural={beschreibt das Hinzufügen von weiteren Komponenten und das Verbessern eines bereits vorhandenen Grundbaustein.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Onlineshop}{}%
+{%
+\gls@defglossaryentry{Onlineshop}%
+{%
+name={Onlineshop},%
+sort={Onlineshop},%
+type={main},%
+first={Onlineshop},%
+firstplural={Onlineshops},%
+text={Onlineshop},%
+plural={Onlineshops},%
+description={Eine Plattform die es einem ermöglich mithilfe eines Internetzuganges Waren einzukaufen und anzusehen.},%
+descriptionplural={Eine Plattform die es einem ermöglich mithilfe eines Internetzuganges Waren einzukaufen und anzusehen.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{iMage}{}%
+{%
+\gls@defglossaryentry{iMage}%
+{%
+name={iMage},%
+sort={iMage},%
+type={main},%
+first={iMage},%
+firstplural={iMages},%
+text={iMage},%
+plural={iMages},%
+description={Dabei handelt es sich um ein Bildbearbeitungsprogramm.},%
+descriptionplural={Dabei handelt es sich um ein Bildbearbeitungsprogramm.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Bestaetigungsnachricht}{}%
+{%
+\gls@defglossaryentry{Bestaetigungsnachricht}%
+{%
+name={Bestaetigungsnachricht},%
+sort={Bestaetigungsnachricht},%
+type={main},%
+first={Bestaetigungsnachricht},%
+firstplural={Bestaetigungsnachrichten},%
+text={Bestaetigungsnachricht},%
+plural={Bestaetigungsnachrichten},%
+description={eine Nachricht die meistens online verschickt wird, welche eine Link beinhaltet. Durch das ausführen des Links, kann man die Echtheit der Adresse bestätigen.},%
+descriptionplural={eine Nachricht die meistens online verschickt wird, welche eine Link beinhaltet. Durch das ausführen des Links, kann man die Echtheit der Adresse bestätigen.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Browser}{}%
+{%
+\gls@defglossaryentry{Browser}%
+{%
+name={Browser},%
+sort={Browser},%
+type={main},%
+first={Browser},%
+firstplural={Browsers},%
+text={Browser},%
+plural={Browsers},%
+description={Eine Oberfläche die es einem \gls {Computer}nutzer ermöglicht Webseiten zu besuchen.},%
+descriptionplural={Eine Oberfläche die es einem \gls {Computer}nutzer ermöglicht Webseiten zu besuchen.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Opera}{}%
+{%
+\gls@defglossaryentry{Opera}%
+{%
+name={Opera},%
+sort={Opera},%
+type={main},%
+first={Opera},%
+firstplural={Operas},%
+text={Opera},%
+plural={Operas},%
+description={Opera ist ein kostenloser, auf einer quelloffenen Rendering-Engine basierender Webbrowser},%
+descriptionplural={Opera ist ein kostenloser, auf einer quelloffenen Rendering-Engine basierender Webbrowser},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Mozilla Firefox}{}%
+{%
+\gls@defglossaryentry{Mozilla Firefox}%
+{%
+name={Mozilla Firefox},%
+sort={Mozilla Firefox},%
+type={main},%
+first={Mozilla Firefox},%
+firstplural={Mozilla Firefoxs},%
+text={Mozilla Firefox},%
+plural={Mozilla Firefoxs},%
+description={Firefox ist ein freier Webbrowser des Mozilla-Projektes},%
+descriptionplural={Firefox ist ein freier Webbrowser des Mozilla-Projektes},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Internet Explorer}{}%
+{%
+\gls@defglossaryentry{Internet Explorer}%
+{%
+name={Internet Explorer},%
+sort={Internet Explorer},%
+type={main},%
+first={Internet Explorer},%
+firstplural={Internet Explorers},%
+text={Internet Explorer},%
+plural={Internet Explorers},%
+description={Internet Explorer ist ein Webbrowser des Softwareherstellers Microsoft für dessen Betriebssystem Windows},%
+descriptionplural={Internet Explorer ist ein Webbrowser des Softwareherstellers Microsoft für dessen Betriebssystem Windows},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Google Chrome}{}%
+{%
+\gls@defglossaryentry{Google Chrome}%
+{%
+name={Google Chrome},%
+sort={Google Chrome},%
+type={main},%
+first={Google Chrome},%
+firstplural={Google Chromes},%
+text={Google Chrome},%
+plural={Google Chromes},%
+description={Google Chrome ist ein Webbrowser des US-amerikanischen Unternehmens Google},%
+descriptionplural={Google Chrome ist ein Webbrowser des US-amerikanischen Unternehmens Google},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Safari}{}%
+{%
+\gls@defglossaryentry{Safari}%
+{%
+name={Safrai},%
+sort={Safrai},%
+type={main},%
+first={Safrai},%
+firstplural={Safrais},%
+text={Safrai},%
+plural={Safrais},%
+description={Safari ist ein Webbrowser des Unternehmens Apple. Er gehört zum Lieferumfang von Mac OS X ab der Version Mac OS X Panther sowie von iOS und ersetzte den vorher mitgelieferten Microsoft Internet Explorer für Mac als Standard-Browser.},%
+descriptionplural={Safari ist ein Webbrowser des Unternehmens Apple. Er gehört zum Lieferumfang von Mac OS X ab der Version Mac OS X Panther sowie von iOS und ersetzte den vorher mitgelieferten Microsoft Internet Explorer für Mac als Standard-Browser.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
