@@ -10,7 +10,6 @@ import org.iMage.edge.detection.base.ImageFilter;
 public class SobelFilter implements ImageFilter {
 
 	public SobelFilter() {
-		// TODO Auto-generated constructor stub
 	}
 
 	private int[][] sobel_x = { { -1, 0, 1 }, { -2, 0, 2 }, { -1, 0, 1 } };
@@ -19,7 +18,7 @@ public class SobelFilter implements ImageFilter {
 	@Override
 	public BufferedImage applyFilter(BufferedImage image) {
 		BufferedImage result = image;
-		for (int i = 0; i < image.getWidth() - 1; i++) {
+		for (int i = 1; i < image.getWidth() - 1; i++) {
 			for (int j = 1; j < image.getHeight() - 1; j++) {
 				int pixel_x = (sobel_x[0][0] * image.getRGB(i - 1, j - 1)) + (sobel_x[0][1] * image.getRGB(i, j - 1))
 						+ (sobel_x[0][2] * image.getRGB(i + 1, j - 1)) + (sobel_x[1][0] * image.getRGB(i - 1, j))

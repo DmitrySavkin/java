@@ -7,7 +7,6 @@ import org.iMage.edge.detection.base.ImageFilter;
 public class GrayScaleFilter implements ImageFilter {
 
 	public GrayScaleFilter() {
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override

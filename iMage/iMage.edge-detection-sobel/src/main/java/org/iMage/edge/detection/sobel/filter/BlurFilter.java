@@ -18,6 +18,9 @@ public class BlurFilter implements ImageFilter {
 			this.blurSize = 3;
 	}
 
+	public BlurFilter() {
+	}
+
 	@Override
 	public BufferedImage applyFilter(BufferedImage image) {
 		BufferedImage result = image;

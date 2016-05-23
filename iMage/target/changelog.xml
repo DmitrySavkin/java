@@ -1,4 +1,10 @@
 <changelog><commit>
+					<time>1463979205</time>
+					<sha1>bd6b92e56de257e85807163909dd134280b34fb8</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>added applyFilter(BufferedImage image) to PrewittFilter.java</msg>
+				</commit><commit>
 					<time>1463978904</time>
 					<sha1>2d60cf6fa2b87ba6b0624f69b0383c4cf1f734ac</sha1>
 					<author>ucews</author>

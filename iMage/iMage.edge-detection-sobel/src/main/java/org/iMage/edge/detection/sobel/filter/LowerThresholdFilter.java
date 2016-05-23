@@ -21,6 +21,9 @@ public class LowerThresholdFilter implements ImageFilter {
 		}
 	}
 
+	public LowerThresholdFilter() {
+	}
+
 	@Override
 	public BufferedImage applyFilter(BufferedImage image) {
 		BufferedImage result = image;
