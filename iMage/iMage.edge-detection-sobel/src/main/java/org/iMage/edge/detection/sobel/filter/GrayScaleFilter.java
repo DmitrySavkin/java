@@ -1,6 +1,5 @@
 package org.iMage.edge.detection.sobel.filter;
 
-import java.awt.Color;
 import java.awt.image.BufferedImage;
 
 import org.iMage.edge.detection.base.ImageFilter;

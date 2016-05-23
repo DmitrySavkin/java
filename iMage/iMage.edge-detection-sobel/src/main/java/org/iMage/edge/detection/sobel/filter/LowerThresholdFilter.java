@@ -11,9 +11,14 @@ import org.iMage.edge.detection.base.ImageFilter;
  */
 public class LowerThresholdFilter implements ImageFilter {
 
-	/** Default constructor must be available! */
-	public LowerThresholdFilter() {
-		// TODO Auto-generated constructor stub
+	int threshold;
+
+	public LowerThresholdFilter(Integer threshold) {
+		if (threshold != null) {
+			this.threshold = threshold;
+		} else {
+			this.threshold = 127;
+		}
 	}
 
 	@Override
@@ -23,7 +28,7 @@ public class LowerThresholdFilter implements ImageFilter {
 			{
 				for (int j = 0; j < result.getWidth(); j++) {
 					int average = image.getRGB(j, i) / 3;
-					if (average < 127) {
+					if (average < this.threshold) {
 						result.setRGB(j, i, 0);
 					} else {
 						result.setRGB(j, i, average);

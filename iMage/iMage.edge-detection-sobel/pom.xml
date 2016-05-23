@@ -9,7 +9,6 @@
     <relativePath>..</relativePath>
   </parent>
   <groupId>swt1.ub2.a4</groupId>
-  <artifactId>1971886</artifactId>
   <name>iMage.edge-detection-sobel</name>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -28,4 +27,5 @@
   </dependencies>
   <description>Edge detection toolkit for all iMage products.</description>
   <version>0.0.1-SNAPSHOT</version>
+  <artifactId>1971886</artifactId>
 </project>
