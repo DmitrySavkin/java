@@ -11,7 +11,7 @@ import org.iMage.edge.detection.base.ImageFilter;
  */
 public class LowerThresholdFilter implements ImageFilter {
 
-	int threshold;
+	private int threshold;
 
 	public LowerThresholdFilter(Integer threshold) {
 		if (threshold != null) {
