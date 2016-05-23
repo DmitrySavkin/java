@@ -9,15 +9,33 @@ import org.iMage.edge.detection.base.ImageFilter;
  */
 public class SobelFilter implements ImageFilter {
 
-	/** Default constructor must be available! */
 	public SobelFilter() {
 		// TODO Auto-generated constructor stub
 	}
 
+	private int[][] sobel_x = { { -1, 0, 1 }, { -2, 0, 2 }, { -1, 0, 1 } };
+	private int[][] sobel_y = { { -1, -2, -1 }, { 0, 0, 0 }, { 1, 2, 1 } };
+
 	@Override
 	public BufferedImage applyFilter(BufferedImage image) {
-		// TODO Auto-generated method stub
-		return null;
+		BufferedImage result = image;
+		for (int i = 0; i < image.getWidth() - 1; i++) {
+			for (int j = 1; j < image.getHeight() - 1; j++) {
+				int pixel_x = (sobel_x[0][0] * image.getRGB(i - 1, j - 1)) + (sobel_x[0][1] * image.getRGB(i, j - 1))
+						+ (sobel_x[0][2] * image.getRGB(i + 1, j - 1)) + (sobel_x[1][0] * image.getRGB(i - 1, j))
+						+ (sobel_x[1][1] * image.getRGB(i, j)) + (sobel_x[1][2] * image.getRGB(i + 1, j))
+						+ (sobel_x[2][0] * image.getRGB(i - 1, j + 1)) + (sobel_x[2][1] * image.getRGB(i, j + 1))
+						+ (sobel_x[2][2] * image.getRGB(i + 1, j + 1));
+				int pixel_y = (sobel_y[0][0] * image.getRGB(i - 1, j - 1)) + (sobel_y[0][1] * image.getRGB(i, j - 1))
+						+ (sobel_y[0][2] * image.getRGB(i + 1, j - 1)) + (sobel_y[1][0] * image.getRGB(i - 1, j))
+						+ (sobel_y[1][1] * image.getRGB(i, j)) + (sobel_y[1][2] * image.getRGB(i + 1, j))
+						+ (sobel_y[2][0] * image.getRGB(i - 1, j + 1)) + (sobel_y[2][1] * image.getRGB(i, j + 1))
+						+ (sobel_y[2][2] * image.getRGB(i + 1, j + 1));
+				int value = (int) Math.floor(Math.sqrt((pixel_x * pixel_x) + (pixel_y * pixel_y)));
+				result.setRGB(i, j, value);
+			}
+		}
+		return result;
 	}
 
 }
