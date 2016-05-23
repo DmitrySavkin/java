@@ -6,9 +6,10 @@
     <groupId>swt1</groupId>
     <artifactId>iMage</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <relativePath>..</relativePath>
   </parent>
   <groupId>swt1.ub2.a5</groupId>
-  <artifactId>iMage.edge-detection-sobel-cli</artifactId>
+  <artifactId>1971886</artifactId>
   <name>iMage.edge-detection-cli</name>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -30,5 +31,5 @@
     </dependency>
   </dependencies>
   <description>Edge dedection tool. Command line version for demo purposes only.</description>
-  <packaging>pom</packaging>
+  <version>0.0.1-SNAPSHOT</version>
 </project>
