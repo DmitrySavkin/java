@@ -37,5 +37,4 @@ public class SobelFilter implements ImageFilter {
 		}
 		return result;
 	}
-
 }

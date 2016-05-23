@@ -1,4 +1,22 @@
 <changelog><commit>
+					<time>1463978904</time>
+					<sha1>2d60cf6fa2b87ba6b0624f69b0383c4cf1f734ac</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>added applyFilter(BufferedImage image) to SobelFilter.java</msg>
+				</commit><commit>
+					<time>1463976398</time>
+					<sha1>147c7310621b6af32589453b854882e6e18366a5</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>modified applyFilter(BufferedImage image) to BlurFilter.java</msg>
+				</commit><commit>
+					<time>1463972703</time>
+					<sha1>c8985b12497fdbc1b1308ff8260f0b1221c24213</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>added applyFilter(BufferedImage image) method to BlurFilter.java</msg>
+				</commit><commit>
 					<time>1463969063</time>
 					<sha1>9f3902370dec4669e3da6a152a23865ffdd57766</sha1>
 					<author>ucews</author>
