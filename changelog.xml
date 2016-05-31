@@ -1,0 +1,188 @@
+commit 1da8d9b61d4412108b9e4cd8acca91f31a7f0506
+Author: ucews <denelfie@gmail.com>
+Date:   Mon May 23 08:42:05 2016 +0200
+
+    added jUnit test cases
+
+commit bd6b92e56de257e85807163909dd134280b34fb8
+Author: ucews <denelfie@gmail.com>
+Date:   Mon May 23 06:53:25 2016 +0200
+
+    added applyFilter(BufferedImage image) to PrewittFilter.java
+
+commit 2d60cf6fa2b87ba6b0624f69b0383c4cf1f734ac
+Author: ucews <denelfie@gmail.com>
+Date:   Mon May 23 06:48:24 2016 +0200
+
+    added applyFilter(BufferedImage image) to SobelFilter.java
+
+commit 147c7310621b6af32589453b854882e6e18366a5
+Author: ucews <denelfie@gmail.com>
+Date:   Mon May 23 06:06:38 2016 +0200
+
+    modified applyFilter(BufferedImage image) to BlurFilter.java
+
+commit c8985b12497fdbc1b1308ff8260f0b1221c24213
+Author: ucews <denelfie@gmail.com>
+Date:   Mon May 23 05:05:03 2016 +0200
+
+    added applyFilter(BufferedImage image) method to BlurFilter.java
+
+commit 9f3902370dec4669e3da6a152a23865ffdd57766
+Author: ucews <denelfie@gmail.com>
+Date:   Mon May 23 04:04:23 2016 +0200
+
+    added applyFilter(BufferedImage image) method to LowerThresholdFilter.java
+
+commit df3363a689cac89f4e9b737b7b2fc10bfb288f1e
+Author: ucews <denelfie@gmail.com>
+Date:   Mon May 23 03:58:30 2016 +0200
+
+    deleted module and added applyFilter(BufferedImage image) method to GrayScaleFilter.java
+
+commit bea61b400bb65ea484c90a97b42fabebe32ea7f9
+Author: ucews <denelfie@gmail.com>
+Date:   Mon May 23 03:17:29 2016 +0200
+
+    moduls imported
+
+commit ac616b4fc91a2ca0ed6458f62d097cb68f43e044
+Author: ucews <denelfie@gmail.com>
+Date:   Mon May 23 00:56:42 2016 +0200
+
+    lastenheft finished
+
+commit 08b73f1ad9adcaca5454decec446a9f83c7871d0
+Author: ucews <denelfie@gmail.com>
+Date:   Mon May 23 00:30:39 2016 +0200
+
+    added szenarien to lastenheft.pdf
+
+commit 655bc3c07fee2996c36e8739d1a21807428d6bbd
+Author: ucews <denelfie@gmail.com>
+Date:   Sun May 22 23:27:07 2016 +0200
+
+    lastenheft modified
+
+commit 99b8f2d720d489308888a734b2fc244fcf322678
+Author: ucews <denelfie@gmail.com>
+Date:   Sun May 22 15:13:30 2016 +0200
+
+    applied musterlösung
+
+commit 45a2f658b40b99e630e7b619124b36bb3edcf892
+Author: ucews <denelfie@gmail.com>
+Date:   Thu May 19 10:27:55 2016 +0200
+
+    Lastenheft modified
+
+commit bb5d09a69d3c5a3c9d0cf371efddba108162e980
+Author: ucews <denelfie@gmail.com>
+Date:   Tue May 17 12:48:54 2016 +0200
+
+    Lastenheft.pdf created
+
+commit cbbafb1ad5dedd06498eca75a23e974593019d06
+Merge: 0cc39b8 b4879ba
+Author: ucews <denelfie@gmail.com>
+Date:   Tue May 10 20:57:22 2016 +0200
+
+    Merged branches
+
+commit 0cc39b86792aef958c0668f304752646be4a2538
+Author: ucews <denelfie@gmail.com>
+Date:   Tue May 10 20:54:27 2016 +0200
+
+    change groupID
+
+commit 845e12f46e8cc9bbf299fa631fb49a1c857208cc
+Author: ucews <denelfie@gmail.com>
+Date:   Tue May 10 20:34:19 2016 +0200
+
+    master-branch and RotateImageTest-branche merged
+
+commit b4879baaac02d596827085f6d71d9195ffe203fc
+Author: ucews <denelfie@gmail.com>
+Date:   Tue May 10 20:31:50 2016 +0200
+
+    patch created for Generator class
+
+commit f4ba8ff1d3afc315fc1b4f5fce7599fe3fbb1908
+Author: ucews <denelfie@gmail.com>
+Date:   Tue May 10 20:07:13 2016 +0200
+
+    created tearDown(...) method´and implemented it into the test-methods. Rotated pictures are now getting saved.
+
+commit e279dbdeef9e3e07d0700bf3e919f6e2441c2bbb
+Author: ucews <denelfie@gmail.com>
+Date:   Tue May 10 18:51:51 2016 +0200
+
+    added testRotate90() medthod and testRotate270() method
+
+commit 015a58b14e50730aefab3cc61f41e719cbb93585
+Author: ucews <denelfie@gmail.com>
+Date:   Tue May 10 18:26:08 2016 +0200
+
+    corrected rotateImage to prevent NullpointerException
+
+commit 5aae551f09baa7066da15e8cdd932cd643aae908
+Author: ucews <denelfie@gmail.com>
+Date:   Tue May 10 18:16:35 2016 +0200
+
+    added testNullPointerForImageRotate() in Tester.java and prevented NullPointerException for the rotateImage(...) method
+
+commit ffbaa2e298d00b671e4f600055362e93aa79f3ac
+Author: ucews <denelfie@gmail.com>
+Date:   Tue May 10 17:59:34 2016 +0200
+
+    added testIllegalArgumentForImageRotate()
+
+commit 4245c17d89dcbbbf4e81ff83b74f9fb9fcc33a7f
+Author: ucews <denelfie@gmail.com>
+Date:   Tue May 10 17:33:20 2016 +0200
+
+    added src/test/resources/picture.jpg, Tester class created, added setUp() methode, added testRotateBufferedImage() method and added testRotateNullImage()
+
+commit 8cb6da5811fc15f4c4692495ae928352eab53cd5
+Author: ucews <denelfie@gmail.com>
+Date:   Tue May 10 15:58:03 2016 +0200
+
+    Main.java modified: line 62 "final" added, line 109 "{" moved one line
+    to the top, line 193 moved "{" moved one line to the top an withespace
+    added
+
+commit 1e3ca1fd068cb89f402924192d7c80c066c84820
+Author: ucews <denelfie@gmail.com>
+Date:   Tue May 10 15:44:13 2016 +0200
+
+    set addClasspath to true. Jar is executable
+
+commit 6961c1781a7a8866d2e09cd3d4a7e903ca12ac05
+Author: ucews <denelfie@gmail.com>
+Date:   Tue May 10 15:08:41 2016 +0200
+
+    copied src.xml, checkstyle_swt1.xml, checkstyle.launch and integration-test.launch to jmjrst.main project
+
+commit 69d1df8e459d53a197b41cfa15e225d8f09e0bf7
+Author: ucews <denelfie@gmail.com>
+Date:   Tue May 10 14:59:24 2016 +0200
+
+    moved the messages_de.properties and the messages_en.properties file to jmjrst.main\src\main\resources\org\jis
+
+commit 2d98bb1ee2c28766e573db141bc16f7578f99755
+Author: ucews <denelfie@gmail.com>
+Date:   Tue May 10 14:55:03 2016 +0200
+
+    moved LICENSE, options.properties and the folders src and templates to their corresponding directory
+
+commit 91dfe24ad24ade42c43ffd0659dfdd152e92e7db
+Author: ucews <denelfie@gmail.com>
+Date:   Tue May 10 14:40:44 2016 +0200
+
+    Repositories added to pom.xml and jmjrst.main created
+
+commit be0700ec6808367c10660060db15b6739cb7d11d
+Author: ucews <denelfie@gmail.com>
+Date:   Tue May 10 14:07:48 2016 +0200
+
+    iMage-Project created and src.xml added to iMage/src/assembly
