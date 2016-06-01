@@ -16,12 +16,14 @@
 package org.jis.view;
 
 import java.net.URL;
+import java.util.ArrayList;
 import javax.swing.ImageIcon;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.UIManager;
 
+import org.iMage.plugins.JmjrstPlugin;
 import org.iMage.plugins.PluginManager;
 import org.jis.Main;
 import org.jis.listner.MenuListner;
@@ -49,6 +51,9 @@ public class Menu extends JMenuBar {
     public JMenuItem look_motif;
     public JMenuItem look_gtk;
     public JMenuItem update_check;
+    JMenuItem[] configurableItems = new JMenuItem[PluginManager.getPlugins().size() - 1];
+    JMenuItem[] runableItems = new JMenuItem[PluginManager.getPlugins().size() - 1];
+
 
     /**
      * @param m a reference to the Main class
@@ -113,20 +118,6 @@ public class Menu extends JMenuBar {
         option.addSeparator();
         option.add(update_check);
         about.add(info);
-        for (int i = 0; i < PluginManager.getPlugins().size(); i++) {
-            JMenu plugin = new JMenu(PluginManager.getPlugins().get(i).getName());
-            if (PluginManager.getPlugins().get(i).isConfigurable()) {
-                JMenuItem config = new JMenuItem(m.mes.getString("Menu.19"));
-                plugin.add(config);
-            }
-            JMenuItem start = new JMenuItem(m.mes.getString("Menu.18"));
-            plugin.add(start);
-            swt1.add(plugin);
-        }
-        this.add(datei);
-        this.add(option);
-        this.add(swt1);
-        this.add(about);
 
         MenuListner al = new MenuListner(m, this);
         exit.addActionListener(al);
@@ -142,6 +133,27 @@ public class Menu extends JMenuBar {
         look_motif.addActionListener(al);
         look_gtk.addActionListener(al);
         update_check.addActionListener(al);
+        for (int i = 0; i < PluginManager.getPlugins().size(); i++) {
+            JMenu plugin = new JMenu(PluginManager.getPlugins().get(i).getName());
+            if (PluginManager.getPlugins().get(i).isConfigurable()) {
+                JMenuItem config = new JMenuItem(m.mes.getString("Menu.19"));
+                config.addActionListener(al);
+                plugin.add(config);
+                configurableItems[i] = config;
+            }
+            JMenuItem start = new JMenuItem(m.mes.getString("Menu.18"));
+            start.addActionListener(al);
+            plugin.add(start);
+            swt1.add(plugin);
+            runableItems[i] = start;
+            if (i < PluginManager.getPlugins().size() - 1) {
+                swt1.addSeparator();
+            }
+        }
+        this.add(datei);
+        this.add(option);
+        this.add(swt1);
+        this.add(about);
 
         UIManager.LookAndFeelInfo uii[] = UIManager.getInstalledLookAndFeels();
         for (int i = 0; i < uii.length; i++) {
@@ -166,4 +178,10 @@ public class Menu extends JMenuBar {
         }
     }
 
+    public JMenuItem[] getConfigurableItems(){
+        return configurableItems;
+    }
+    public JMenuItem[] getRunableItems(){
+        return runableItems;
+    }
 }
