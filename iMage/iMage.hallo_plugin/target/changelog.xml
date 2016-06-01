@@ -1,4 +1,10 @@
 <changelog><commit>
+					<time>1464793645</time>
+					<sha1>809f2c21e2dc0639121081a1800c26bce8a8eec3</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>modified all abstract methods for hallo_plugin and created needed META-Inf folders</msg>
+				</commit><commit>
 					<time>1464782642</time>
 					<sha1>291602ebf8a7ba4517b6fdefea52fc6d70a5a370</sha1>
 					<author>ucews</author>

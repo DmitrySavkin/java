@@ -37,7 +37,7 @@
   	</dependency>
   	<dependency>
   		<groupId>swt1.ub3.a2</groupId>
-  		<artifactId>Hallo-SWT1-Plugin</artifactId>
+  		<artifactId>iMage.hallo_plugin</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
   </dependencies>

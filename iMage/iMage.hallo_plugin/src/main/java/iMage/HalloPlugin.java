@@ -8,7 +8,7 @@ import org.jis.Main;
 import org.kohsuke.MetaInfServices;
 
 @MetaInfServices
-public class hallo_plugin extends JmjrstPlugin {
+public class HalloPlugin extends JmjrstPlugin {
     @Override
     public String getMenuText() {
         return null;
@@ -26,7 +26,7 @@ public class hallo_plugin extends JmjrstPlugin {
 
     @Override
     public void run() {
-    	System.out.println("iMage - nur echt mit JMJRST!");
+    	System.err.println("iMage - nur echt mit JMJRST!");
     }
 
     @Override
@@ -38,9 +38,10 @@ public class hallo_plugin extends JmjrstPlugin {
     public void configure() {
     	JFrame pluginFrame = new JFrame(getName());
     	pluginFrame.setSize(100, 100);
-    	pluginFrame.setVisible(true);
     	pluginFrame.setLocationRelativeTo(null);
-    	JLabel pluginName = new JLabel(getName(), JLabel.CENTER);
+    	JLabel pluginLabel = new JLabel(getName(), JLabel.CENTER);
+    	pluginFrame.add(pluginLabel);
+    	pluginFrame.setVisible(true);
     }
 }
     
