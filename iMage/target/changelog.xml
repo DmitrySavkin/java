@@ -1,4 +1,16 @@
 <changelog><commit>
+					<time>1464682233</time>
+					<sha1>050c328e005eeab3c1a15771dfb0cca6c43e7013</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>modul added</msg>
+				</commit><commit>
+					<time>1463985725</time>
+					<sha1>1da8d9b61d4412108b9e4cd8acca91f31a7f0506</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>added jUnit test cases</msg>
+				</commit><commit>
 					<time>1463979205</time>
 					<sha1>bd6b92e56de257e85807163909dd134280b34fb8</sha1>
 					<author>ucews</author>

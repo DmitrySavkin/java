@@ -8,39 +8,41 @@ import org.iMage.edge.detection.base.ImageFilter;
  * Implements the blur filter as requested on worksheet 2.
  */
 public class BlurFilter implements ImageFilter {
+	
+	private int size;
 
-	private int blurSize;
-
-	public BlurFilter(Integer blurSize) {
-		if (blurSize != null) {
-			this.blurSize = blurSize;
-		} else
-			this.blurSize = 3;
-	}
-
-	public BlurFilter() {
+	/** Default constructor must be available! */
+	public BlurFilter(int size) {
+		this.size = size;
 	}
 
 	@Override
 	public BufferedImage applyFilter(BufferedImage image) {
-		BufferedImage result = image;
-		for (int i = (int) Math.floor((blurSize / 2)); i < result.getHeight() - (int) Math.floor((blurSize / 2)); i++) {
-			for (int j = (int) Math.floor((blurSize / 2)); j < result.getWidth()
-					- (int) Math.floor((blurSize / 2)); j++) {
-				double averageRGB = 0;
-				int counter = -(int) Math.floor((blurSize / 2));
-				while (counter < blurSize - (int) Math.floor((blurSize / 2))) {
-					int runner = -(int) Math.floor((blurSize / 2));
-					while (runner < blurSize - (int) Math.floor((blurSize / 2))) {
-						averageRGB = averageRGB + image.getRGB(j + counter, i + runner) / (blurSize * blurSize);
-						runner++;
-					}
-					counter++;
-				}
-				result.setRGB(j, i, (int) averageRGB);
-			}
+		int height = image.getHeight();
+		int width = image.getWidth();
+		int toDiv = size * size;
+		BufferedImage bluredImage = image;
+		int toRun = (int)Math.floor(size / 2);
+		for (int x = toRun; x < (width - toRun); x++) {
+		    for (int y = toRun; y < (height - toRun); y++) {
+		    	int average = 0;
+		    	for (int k = -toRun; k < (size - toRun); k++) {
+		    		for (int j = -toRun; j < (size - toRun); j++) {
+		    			int pixel = image.getRGB(x, y);
+		    			int a = (pixel >> 24) & 0xff;
+		    			int r = (pixel >> 16) & 0xff;
+						int g = (pixel >> 8) & 0xff;
+						int b = (pixel & 0xff);
+						int avRGB = (a + r + b + g) / 4;
+						int grayPixel = (avRGB << 24) + (avRGB << 16) + (avRGB << 8) + avRGB;
+		    		    average += grayPixel / toDiv;
+		    		}
+		    	}
+		        bluredImage.setRGB(x, y, average);
+		    }
 		}
-		return result;
+
+		return bluredImage;
 	}
 
 }

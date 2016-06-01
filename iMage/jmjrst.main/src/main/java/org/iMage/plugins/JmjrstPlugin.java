@@ -54,8 +54,11 @@ public abstract class JmjrstPlugin implements Comparable<JmjrstPlugin> {
 	 */
 	@Override
 	public int compareTo(JmjrstPlugin otherPlugin) {
-		
-		// TODO Implement me!
-		return 0;
+		if (this.getName().compareTo(otherPlugin.getName()) == 0)
+			return 0;
+		else if (this.getName().compareTo(otherPlugin.getName()) > 0)
+			return 1;
+		else
+			return -1;
 	}
 }

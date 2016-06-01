@@ -23,8 +23,8 @@ public final class PluginManager {
 	 *         ascending order.
 	 */
 	public static List<JmjrstPlugin> getPlugins() {
-		// TODO Implement me!
-		
-		return null;
+		ArrayList<JmjrstPlugin> pluginList = new ArrayList<>();
+		Collections.sort(pluginList);
+		return pluginList;
 	}
 }

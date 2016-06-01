@@ -9,31 +9,49 @@ import org.iMage.edge.detection.base.ImageFilter;
  */
 public class PrewittFilter implements ImageFilter {
 
+	private int[][] kernelX = {
+			{-1, 0, 1},
+			{-1, 0, 1},
+			{-1, 0, 1}
+	};
+	private int[][] kernelY = {
+			{-1, -1, -1},
+			{0, 0, 0},
+			{1, 1, 1}
+	};
+	private int[][] kernelZ;
+	/** Default constructor must be available! */
 	public PrewittFilter() {
+		// TODO Auto-generated constructor stub
 	}
-
-	private int[][] prewit_x = { { -1, 0, 1 }, { -1, 0, 1 }, { -1, 0, 1 } };
-	private int[][] prewit_y = { { -1, -1, -1 }, { 0, 0, 0 }, { 1, 1, 1 } };
 
 	@Override
 	public BufferedImage applyFilter(BufferedImage image) {
-		BufferedImage result = image;
-		for (int i = 1; i < image.getWidth() - 1; i++) {
-			for (int j = 1; j < image.getHeight() - 1; j++) {
-				int pixel_x = (prewit_x[0][0] * image.getRGB(i - 1, j - 1)) + (prewit_x[0][1] * image.getRGB(i, j - 1))
-						+ (prewit_x[0][2] * image.getRGB(i + 1, j - 1)) + (prewit_x[1][0] * image.getRGB(i - 1, j))
-						+ (prewit_x[1][1] * image.getRGB(i, j)) + (prewit_x[1][2] * image.getRGB(i + 1, j))
-						+ (prewit_x[2][0] * image.getRGB(i - 1, j + 1)) + (prewit_x[2][1] * image.getRGB(i, j + 1))
-						+ (prewit_x[2][2] * image.getRGB(i + 1, j + 1));
-				int pixel_y = (prewit_y[0][0] * image.getRGB(i - 1, j - 1)) + (prewit_y[0][1] * image.getRGB(i, j - 1))
-						+ (prewit_y[0][2] * image.getRGB(i + 1, j - 1)) + (prewit_y[1][0] * image.getRGB(i - 1, j))
-						+ (prewit_y[1][1] * image.getRGB(i, j)) + (prewit_y[1][2] * image.getRGB(i + 1, j))
-						+ (prewit_y[2][0] * image.getRGB(i - 1, j + 1)) + (prewit_y[2][1] * image.getRGB(i, j + 1))
-						+ (prewit_y[2][2] * image.getRGB(i + 1, j + 1));
-				int value = (int) Math.floor(Math.sqrt((pixel_x * pixel_x) + (pixel_y * pixel_y)));
-				result.setRGB(i, j, value);
+		kernelZ = new int[3][3];
+		int height = image.getHeight();
+		int width = image.getWidth();
+		int max = 0;
+		int sum = 0;
+		BufferedImage edgedImage = image;
+		for (int x = 0; x < width; x++) {
+			for (int y = 0; y < height; y++) {
+				int xCurrentXY = kernelX[x%3][y%3];
+				int yCurrentXY = kernelY[x%3][y%3];
+				kernelZ[x%3][y%3]=(int)Math.sqrt(xCurrentXY*xCurrentXY+yCurrentXY*yCurrentXY);
+				if (max < kernelZ[x%3][y%3]) {
+					max = kernelZ[x%3][y%3];
+				}
 			}
 		}
-		return result;
+		float ratio = (float)max / 255;
+		for (int x = 0; x < width; x++) {
+			for (int y = 0; y < height; y++) {
+				sum=(int)(kernelZ[x%3][y%3] / ratio);
+				int rgb = 0xff | ((int)sum << 16 | (int)sum << 8 | (int)sum);
+				edgedImage.setRGB(x, y, rgb);
+			}
+		}
+		return edgedImage;
 	}
+
 }

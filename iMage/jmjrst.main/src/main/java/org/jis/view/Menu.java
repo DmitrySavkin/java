@@ -16,13 +16,13 @@
 package org.jis.view;
 
 import java.net.URL;
-
 import javax.swing.ImageIcon;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.UIManager;
 
+import org.iMage.plugins.PluginManager;
 import org.jis.Main;
 import org.jis.listner.MenuListner;
 
@@ -59,6 +59,7 @@ public class Menu extends JMenuBar {
     JMenu datei = new JMenu(m.mes.getString("Menu.0"));
     JMenu option = new JMenu(m.mes.getString("Menu.1"));
     JMenu optionen_look = new JMenu(m.mes.getString("Menu.2"));
+    JMenu swt1 = new JMenu(m.mes.getString("Menu.17"));
     JMenu about = new JMenu(m.mes.getString("Menu.3"));
 
     gener = new JMenuItem(m.mes.getString("Menu.4"));
@@ -113,8 +114,16 @@ public class Menu extends JMenuBar {
     option.addSeparator();
     option.add(update_check);
     about.add(info);
+    for(int i = 0; i < PluginManager.getPlugins().size(); i++){
+      swt1.add(PluginManager.getPlugins().get(i).getName());
+      if(PluginManager.getPlugins().get(i).isConfigurable()){
+        //swt1.add(plugin-konfigurieren
+      }
+      //swt1.add(plugin-ausführen)
+    }
     this.add(datei);
     this.add(option);
+    this.add(swt1);
     this.add(about);
 
     MenuListner al = new MenuListner(m, this);
