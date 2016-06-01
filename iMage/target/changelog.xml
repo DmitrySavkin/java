@@ -1,4 +1,10 @@
 <changelog><commit>
+					<time>1464782642</time>
+					<sha1>291602ebf8a7ba4517b6fdefea52fc6d70a5a370</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>corrected the changes in the MenuListner.java</msg>
+				</commit><commit>
 					<time>1464777182</time>
 					<sha1>3c1a045473e57ff516f7acde255bb1743e85f9b1</sha1>
 					<author>ucews</author>

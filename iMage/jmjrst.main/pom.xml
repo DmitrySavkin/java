@@ -30,5 +30,15 @@
   		<artifactId>junit</artifactId>
   		<scope>test</scope>
   	</dependency>
+  	<dependency>
+  		<groupId>org.kohsuke.metainf-services</groupId>
+  		<artifactId>metainf-services</artifactId>
+  		<version>1.1</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>swt1.ub3.a2</groupId>
+  		<artifactId>Hallo-SWT1-Plugin</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
   </dependencies>
 </project>

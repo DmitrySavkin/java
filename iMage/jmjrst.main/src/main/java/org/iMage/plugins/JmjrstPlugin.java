@@ -1,8 +1,10 @@
 package org.iMage.plugins;
 
+import org.kohsuke.MetaInfServices;
 /**
  * Abstract parent class for plug ins for JMJRST
  */
+@MetaInfServices
 public abstract class JmjrstPlugin implements Comparable<JmjrstPlugin> {
 
 	/**

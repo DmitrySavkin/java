@@ -1,0 +1,237 @@
+<changelog><commit>
+					<time>1464782642</time>
+					<sha1>291602ebf8a7ba4517b6fdefea52fc6d70a5a370</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>corrected the changes in the MenuListner.java</msg>
+				</commit><commit>
+					<time>1464777182</time>
+					<sha1>3c1a045473e57ff516f7acde255bb1743e85f9b1</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>cleaned the project</msg>
+				</commit><commit>
+					<time>1464774421</time>
+					<sha1>925f2d96ba9d724f2305600f9c9d3ee1674ad247</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>finalized the swt-1 menu an created hello_swt1_plugin</msg>
+				</commit><commit>
+					<time>1464766143</time>
+					<sha1>557fc81db05b0d84ef6c46baa9bd52c9da8368de</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>modified swt-1 menu and getPlugins()</msg>
+				</commit><commit>
+					<time>1464758809</time>
+					<sha1>360b8a9204656186b7c670eb0ceb94d06787f00d</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>modified compaireTo methode for plugins, modified getPlugins methode in PluginManager.java and added the swt-1 menu</msg>
+				</commit><commit>
+					<time>1464682233</time>
+					<sha1>050c328e005eeab3c1a15771dfb0cca6c43e7013</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>modul added</msg>
+				</commit><commit>
+					<time>1463985725</time>
+					<sha1>1da8d9b61d4412108b9e4cd8acca91f31a7f0506</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>added jUnit test cases</msg>
+				</commit><commit>
+					<time>1463979205</time>
+					<sha1>bd6b92e56de257e85807163909dd134280b34fb8</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>added applyFilter(BufferedImage image) to PrewittFilter.java</msg>
+				</commit><commit>
+					<time>1463978904</time>
+					<sha1>2d60cf6fa2b87ba6b0624f69b0383c4cf1f734ac</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>added applyFilter(BufferedImage image) to SobelFilter.java</msg>
+				</commit><commit>
+					<time>1463976398</time>
+					<sha1>147c7310621b6af32589453b854882e6e18366a5</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>modified applyFilter(BufferedImage image) to BlurFilter.java</msg>
+				</commit><commit>
+					<time>1463972703</time>
+					<sha1>c8985b12497fdbc1b1308ff8260f0b1221c24213</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>added applyFilter(BufferedImage image) method to BlurFilter.java</msg>
+				</commit><commit>
+					<time>1463969063</time>
+					<sha1>9f3902370dec4669e3da6a152a23865ffdd57766</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>added applyFilter(BufferedImage image) method to LowerThresholdFilter.java</msg>
+				</commit><commit>
+					<time>1463968710</time>
+					<sha1>df3363a689cac89f4e9b737b7b2fc10bfb288f1e</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>deleted module and added applyFilter(BufferedImage image) method to GrayScaleFilter.java</msg>
+				</commit><commit>
+					<time>1463966249</time>
+					<sha1>bea61b400bb65ea484c90a97b42fabebe32ea7f9</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>moduls imported</msg>
+				</commit><commit>
+					<time>1463957802</time>
+					<sha1>ac616b4fc91a2ca0ed6458f62d097cb68f43e044</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>lastenheft finished</msg>
+				</commit><commit>
+					<time>1463956239</time>
+					<sha1>08b73f1ad9adcaca5454decec446a9f83c7871d0</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>added szenarien to lastenheft.pdf</msg>
+				</commit><commit>
+					<time>1463952427</time>
+					<sha1>655bc3c07fee2996c36e8739d1a21807428d6bbd</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>lastenheft modified</msg>
+				</commit><commit>
+					<time>1463922810</time>
+					<sha1>99b8f2d720d489308888a734b2fc244fcf322678</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>applied musterlösung</msg>
+				</commit><commit>
+					<time>1463646475</time>
+					<sha1>45a2f658b40b99e630e7b619124b36bb3edcf892</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>Lastenheft modified</msg>
+				</commit><commit>
+					<time>1463482134</time>
+					<sha1>bb5d09a69d3c5a3c9d0cf371efddba108162e980</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>Lastenheft.pdf created</msg>
+				</commit><commit>
+					<time>1463221744</time>
+					<sha1>5f20011e819e49c66351198d6446a8539f4b632e</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/RotateImageTest</branches>
+					<msg>Removed target folder and modified pom.xml and settings</msg>
+				</commit><commit>
+					<time>1462943559</time>
+					<sha1>6a0c88f382265d2a3cadaffbe560e5e8c2b43bf8</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/RotateImageTest</branches>
+					<msg>renamed Tester.java to GeneratorTest.java</msg>
+				</commit><commit>
+					<time>1462906642</time>
+					<sha1>cbbafb1ad5dedd06498eca75a23e974593019d06</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>Merged branches</msg>
+				</commit><commit>
+					<time>1462906467</time>
+					<sha1>0cc39b86792aef958c0668f304752646be4a2538</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>change groupID</msg>
+				</commit><commit>
+					<time>1462905259</time>
+					<sha1>845e12f46e8cc9bbf299fa631fb49a1c857208cc</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>master-branch and RotateImageTest-branche merged</msg>
+				</commit><commit>
+					<time>1462905110</time>
+					<sha1>b4879baaac02d596827085f6d71d9195ffe203fc</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master,refs/heads/RotateImageTest</branches>
+					<msg>patch created for Generator class</msg>
+				</commit><commit>
+					<time>1462903633</time>
+					<sha1>f4ba8ff1d3afc315fc1b4f5fce7599fe3fbb1908</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master,refs/heads/RotateImageTest</branches>
+					<msg>created tearDown(...) method´and implemented it into the test-methods. Rotated pictures are now getting saved.</msg>
+				</commit><commit>
+					<time>1462899111</time>
+					<sha1>e279dbdeef9e3e07d0700bf3e919f6e2441c2bbb</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master,refs/heads/RotateImageTest</branches>
+					<msg>added testRotate90() medthod and testRotate270() method</msg>
+				</commit><commit>
+					<time>1462897568</time>
+					<sha1>015a58b14e50730aefab3cc61f41e719cbb93585</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master,refs/heads/RotateImageTest</branches>
+					<msg>corrected rotateImage to prevent NullpointerException</msg>
+				</commit><commit>
+					<time>1462896995</time>
+					<sha1>5aae551f09baa7066da15e8cdd932cd643aae908</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master,refs/heads/RotateImageTest</branches>
+					<msg>added testNullPointerForImageRotate() in Tester.java and prevented NullPointerException for the rotateImage(...) method</msg>
+				</commit><commit>
+					<time>1462895974</time>
+					<sha1>ffbaa2e298d00b671e4f600055362e93aa79f3ac</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master,refs/heads/RotateImageTest</branches>
+					<msg>added testIllegalArgumentForImageRotate()</msg>
+				</commit><commit>
+					<time>1462894400</time>
+					<sha1>4245c17d89dcbbbf4e81ff83b74f9fb9fcc33a7f</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master,refs/heads/RotateImageTest</branches>
+					<msg>added src/test/resources/picture.jpg, Tester class created, added setUp() methode, added testRotateBufferedImage() method and added testRotateNullImage()</msg>
+				</commit><commit>
+					<time>1462888851</time>
+					<sha1>8cb6da5811fc15f4c4692495ae928352eab53cd5</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master,refs/heads/RotateImageTest</branches>
+					<msg>Main.java modified: line 62 &quot;final&quot; added, line 109 &quot;{&quot; moved one line
+to the top, line 193 moved &quot;{&quot; moved one line to the top an withespace
+added</msg>
+				</commit><commit>
+					<time>1462887853</time>
+					<sha1>1e3ca1fd068cb89f402924192d7c80c066c84820</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master,refs/heads/RotateImageTest</branches>
+					<msg>set addClasspath to true. Jar is executable</msg>
+				</commit><commit>
+					<time>1462885721</time>
+					<sha1>6961c1781a7a8866d2e09cd3d4a7e903ca12ac05</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master,refs/heads/RotateImageTest</branches>
+					<msg>copied src.xml, checkstyle_swt1.xml, checkstyle.launch and integration-test.launch to jmjrst.main project</msg>
+				</commit><commit>
+					<time>1462885164</time>
+					<sha1>69d1df8e459d53a197b41cfa15e225d8f09e0bf7</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master,refs/heads/RotateImageTest</branches>
+					<msg>moved the messages_de.properties and the messages_en.properties file to jmjrst.main\src\main\resources\org\jis</msg>
+				</commit><commit>
+					<time>1462884903</time>
+					<sha1>2d98bb1ee2c28766e573db141bc16f7578f99755</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master,refs/heads/RotateImageTest</branches>
+					<msg>moved LICENSE, options.properties and the folders src and templates to their corresponding directory</msg>
+				</commit><commit>
+					<time>1462884044</time>
+					<sha1>91dfe24ad24ade42c43ffd0659dfdd152e92e7db</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master,refs/heads/RotateImageTest</branches>
+					<msg>Repositories added to pom.xml and jmjrst.main created</msg>
+				</commit><commit>
+					<time>1462882068</time>
+					<sha1>be0700ec6808367c10660060db15b6739cb7d11d</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master,refs/heads/RotateImageTest</branches>
+					<msg>iMage-Project created and src.xml added to iMage/src/assembly</msg>
+				</commit></changelog>
