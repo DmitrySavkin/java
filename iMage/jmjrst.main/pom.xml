@@ -21,8 +21,8 @@
 			</plugin>
 		</plugins>
 	</build>
-  <groupId>swt1.ub1.a4</groupId>
-  <artifactId>jmjrst.main</artifactId>
+  <groupId>swt1.ub3.a1</groupId>
+  <artifactId>1971886</artifactId>
   <name>jmjrst.main</name>
   <dependencies>
   	<dependency>

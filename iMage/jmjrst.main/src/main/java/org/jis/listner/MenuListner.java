@@ -135,9 +135,9 @@ public class MenuListner implements ActionListener {
             }
         }
         for (int i = 0; i < PluginManager.getPlugins().size(); i++) {
-            if (e.getSource() == menu.getConfigurableItems()[i]) {
+            if (e.getSource() == menu.configurableItems[i]) {
                 PluginManager.getPlugins().get(i).configure();
-            } else if (e.getSource() == menu.getRunableItems()[i]) {
+            } else if (e.getSource() == menu.runableItems[i]) {
                 PluginManager.getPlugins().get(i).run();
             }
         }

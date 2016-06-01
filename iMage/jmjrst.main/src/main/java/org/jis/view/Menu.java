@@ -51,8 +51,8 @@ public class Menu extends JMenuBar {
     public JMenuItem look_motif;
     public JMenuItem look_gtk;
     public JMenuItem update_check;
-    JMenuItem[] configurableItems = new JMenuItem[PluginManager.getPlugins().size() - 1];
-    JMenuItem[] runableItems = new JMenuItem[PluginManager.getPlugins().size() - 1];
+    public JMenuItem[] configurableItems;
+    public JMenuItem[] runableItems;
 
 
     /**
@@ -135,6 +135,8 @@ public class Menu extends JMenuBar {
         update_check.addActionListener(al);
         for (int i = 0; i < PluginManager.getPlugins().size(); i++) {
             JMenu plugin = new JMenu(PluginManager.getPlugins().get(i).getName());
+            configurableItems = new JMenuItem[PluginManager.getPlugins().size()-1];
+            runableItems = new JMenuItem[PluginManager.getPlugins().size()-1];
             if (PluginManager.getPlugins().get(i).isConfigurable()) {
                 JMenuItem config = new JMenuItem(m.mes.getString("Menu.19"));
                 config.addActionListener(al);
@@ -146,7 +148,7 @@ public class Menu extends JMenuBar {
             plugin.add(start);
             swt1.add(plugin);
             runableItems[i] = start;
-            if (i < PluginManager.getPlugins().size() - 1) {
+            if (i != PluginManager.getPlugins().size() - 1) {
                 swt1.addSeparator();
             }
         }
@@ -176,13 +178,5 @@ public class Menu extends JMenuBar {
                     .equalsIgnoreCase("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel"))
                 optionen_look.add(look_nimbus); //$NON-NLS-1$
         }
-    }
-
-    public JMenuItem[] getConfigurableItems() {
-        return configurableItems;
-    }
-
-    public JMenuItem[] getRunableItems() {
-        return runableItems;
     }
 }
