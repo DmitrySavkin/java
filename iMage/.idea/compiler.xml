@@ -23,7 +23,6 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="1971886" />
-        <module name="iMage.hallo_plugin" />
         <module name="jmjrst.main" />
       </profile>
     </annotationProcessing>

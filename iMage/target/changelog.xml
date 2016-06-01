@@ -1,4 +1,10 @@
 <changelog><commit>
+					<time>1464774421</time>
+					<sha1>925f2d96ba9d724f2305600f9c9d3ee1674ad247</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>finalized the swt-1 menu an created hello_swt1_plugin</msg>
+				</commit><commit>
 					<time>1464766143</time>
 					<sha1>557fc81db05b0d84ef6c46baa9bd52c9da8368de</sha1>
 					<author>ucews</author>

@@ -178,10 +178,11 @@ public class Menu extends JMenuBar {
         }
     }
 
-    public JMenuItem[] getConfigurableItems(){
+    public JMenuItem[] getConfigurableItems() {
         return configurableItems;
     }
-    public JMenuItem[] getRunableItems(){
+
+    public JMenuItem[] getRunableItems() {
         return runableItems;
     }
 }
