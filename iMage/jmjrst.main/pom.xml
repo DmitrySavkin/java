@@ -35,11 +35,6 @@
   		<artifactId>metainf-services</artifactId>
   		<version>1.1</version>
   	</dependency>
-  	<dependency>
-  		<groupId>swt1.ub3.a2</groupId>
-  		<artifactId>iMage.hallo_plugin</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
   </dependencies>
   <version>0.0.1-SNAPSHOT</version>
 </project>

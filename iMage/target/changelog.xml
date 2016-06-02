@@ -1,4 +1,16 @@
 <changelog><commit>
+					<time>1464855281</time>
+					<sha1>26e84eb828bfee872d27bd9c580d8eb25757e1c0</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>implemented the main method for App.java in iMage.bundle and  implemented the copy plugin</msg>
+				</commit><commit>
+					<time>1464853995</time>
+					<sha1>d1dc847f1ad6b3e0a252ae88669812064bb519ef</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>created iMage.bundle and added dependencys for iMage.bundle</msg>
+				</commit><commit>
 					<time>1464799877</time>
 					<sha1>bb508e6f0aba7038338ce83c0ac32c7dd39d2cee</sha1>
 					<author>ucews</author>
