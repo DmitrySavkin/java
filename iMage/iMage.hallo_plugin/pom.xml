@@ -9,7 +9,6 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>iMage.hallo_plugin</artifactId>
     <name>Hallo-SWT1-Plugin</name>
     <groupId>swt1.ub3.a2</groupId>
     <version>0.0.1-SNAPSHOT</version>
@@ -26,4 +25,5 @@
             <optional>true</optional>
         </dependency>
     </dependencies>
+    <artifactId>iMage.hallo_plugin</artifactId>
 </project>

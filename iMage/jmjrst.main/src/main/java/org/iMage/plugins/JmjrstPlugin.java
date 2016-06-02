@@ -5,7 +5,7 @@ import org.kohsuke.MetaInfServices;
  * Abstract parent class for plug ins for JMJRST
  */
 @MetaInfServices
-public abstract class JmjrstPlugin implements Comparable<JmjrstPlugin> {
+public abstract class JmjrstPlugin implements Comparable<JmjrstPlugin>{
 
 	/**
 	 * @return The text for the menu labels for the plugin

@@ -21,5 +21,6 @@
         <module>jmjrst.main</module>
         <module>iMage.edge-detection-sobel</module>
         <module>iMage.hallo_plugin</module>
+        <module>iMage.bundle</module>
     </modules>
 </project>

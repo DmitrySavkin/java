@@ -1,8 +1,10 @@
 package org.iMage.plugins;
 
-import java.util.*;
-
-import static java.util.ServiceLoader.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ServiceLoader;
 
 /**
  * Knows all available plugins and is responsible for using the service loader

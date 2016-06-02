@@ -1,4 +1,10 @@
 <changelog><commit>
+					<time>1464799877</time>
+					<sha1>bb508e6f0aba7038338ce83c0ac32c7dd39d2cee</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>renamed hallo_plugin and fixed incorrect pom.xml entries</msg>
+				</commit><commit>
 					<time>1464793645</time>
 					<sha1>809f2c21e2dc0639121081a1800c26bce8a8eec3</sha1>
 					<author>ucews</author>
