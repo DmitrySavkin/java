@@ -24,6 +24,7 @@
         <processorPath useClasspath="true" />
         <module name="1971886" />
         <module name="Hallo-SWT1-Plugin" />
+        <module name="iMage.bundle" />
         <module name="iMage.hallo_plugin" />
         <module name="jmjrst.main" />
       </profile>
@@ -32,6 +33,7 @@
       <module name="1971886" target="1.7" />
       <module name="Hallo-SWT1-Plugin" target="1.7" />
       <module name="iMage" target="1.5" />
+      <module name="iMage.bundle" target="1.7" />
       <module name="iMage.hallo_plugin" target="1.7" />
       <module name="jmjrst.main" target="1.7" />
     </bytecodeTargetLevel>

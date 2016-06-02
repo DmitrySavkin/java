@@ -2,10 +2,10 @@ package org.jis;
 
 public final class App {
 
-	private App() {
-	}
+    private App() {
+    }
 
-	public static void main(String[] args) {
-		Main.main(args);
-	}
+    public static void main(String[] args) {
+        Main.main(args);
+    }
 }

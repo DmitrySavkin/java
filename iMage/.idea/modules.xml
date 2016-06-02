@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/iMage.edge-detection-sobel/1971886.iml" filepath="$PROJECT_DIR$/iMage.edge-detection-sobel/1971886.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/iMage.iml" filepath="$PROJECT_DIR$/.idea/iMage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iMage.bundle/iMage.bundle.iml" filepath="$PROJECT_DIR$/iMage.bundle/iMage.bundle.iml" />
       <module fileurl="file://$PROJECT_DIR$/iMage.hallo_plugin/iMage.hallo_plugin.iml" filepath="$PROJECT_DIR$/iMage.hallo_plugin/iMage.hallo_plugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/jmjrst.main/jmjrst.main.iml" filepath="$PROJECT_DIR$/jmjrst.main/jmjrst.main.iml" />
     </modules>

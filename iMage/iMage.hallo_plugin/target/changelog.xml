@@ -1,4 +1,10 @@
 <changelog><commit>
+					<time>1464856617</time>
+					<sha1>813e0d43e0333db99b0dd1c8fbab63b71225c09f</sha1>
+					<author>ucews</author>
+					<branches>refs/heads/master</branches>
+					<msg>packaged project and modified iMage.bundle/pom.xml</msg>
+				</commit><commit>
 					<time>1464855281</time>
 					<sha1>26e84eb828bfee872d27bd9c580d8eb25757e1c0</sha1>
 					<author>ucews</author>
